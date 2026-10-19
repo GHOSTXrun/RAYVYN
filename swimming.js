@@ -22,7 +22,7 @@
     ray.className='ocean-ray';
     Object.entries({depth,size,alpha,duration,delay}).forEach(([key,value])=>ray.style.setProperty(`--${key}`,value));
     const img = document.createElement('img');
-    img.src='/RAYVYN/rayvyn-logo.png';img.alt='';img.decoding='async';
+    img.src='/rayvyn-logo.png';img.alt='';img.decoding='async';
     ray.appendChild(img);ocean.appendChild(ray);
   });
   document.body.appendChild(ocean);

@@ -23,7 +23,7 @@
   const rings = [0,1,2].map(() => element('circle', {fill:'none',stroke:'#53eaff','stroke-width':'.8',opacity:'0'}, signals));
   nodes[2].style.display = 'none';
   svg.querySelector('.pulse-ring')?.setAttribute('display','none');
-  const mascot = element('image', {href:'/RAYVYN/rayvyn-logo.png',x:'-48',y:'-48',width:'96',height:'96',style:'mix-blend-mode:screen;pointer-events:none'},svg);
+  const mascot = element('image', {href:'/rayvyn-logo.png',x:'-48',y:'-48',width:'96',height:'96',style:'mix-blend-mode:screen;pointer-events:none'},svg);
   const label = svg.querySelector('text');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   let time = 0, last = 0, frame = 0, visible = false, burst = -100;

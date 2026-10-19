@@ -5,7 +5,7 @@ import shutil
 
 ROOT = Path(__file__).resolve().parent
 SOURCE = ROOT / 'frontend' / 'site'
-BASE = '/RAYVYN/'
+BASE = '/' if (ROOT / 'CNAME').is_file() else '/RAYVYN/'
 TOP = {p.name for p in SOURCE.iterdir()}
 PATTERN = re.compile(r'''(?P<quote>["'(])/(?P<path>[^\s"'<>)]*)''')
 
