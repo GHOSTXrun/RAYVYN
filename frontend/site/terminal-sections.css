@@ -1,0 +1,44 @@
+/* Shared terminal treatment for the signal study and pathways. */
+body[data-page=home] .sensing,body[data-page=home] .pathway-preview{font-family:Consolas,'Courier New',monospace;max-width:1200px;padding-top:55px;padding-bottom:55px;border-bottom:1px solid #143752;background-image:repeating-linear-gradient(0deg,transparent 0,transparent 5px,#69a9e808 5px,#69a9e808 6px)}
+body[data-page=home] .sensing .section-heading,body[data-page=home] .pathway-preview .section-heading{align-items:center;margin-bottom:28px}
+body[data-page=home] .sensing .section-heading h2,body[data-page=home] .pathway-preview .section-heading h2{font:600 21px/1.6 Consolas,'Courier New',monospace;letter-spacing:0;color:#00e5ee;margin:12px 0 0}
+body[data-page=home] .sensing h2 br{display:none}body[data-page=home] .sensing h2 em:before{content:' '}
+body[data-page=home] .sensing h2 em,body[data-page=home] .pathway-preview h2 em{font:inherit;color:inherit}
+body[data-page=home] .sensing .eyebrow,body[data-page=home] .pathway-preview .eyebrow{font-size:10px;color:#498fcd;letter-spacing:1px}
+body[data-page=home] .sensing .section-heading>p{font:12px/1.8 Consolas,monospace;color:#9fcbd9}
+body[data-page=home] .pathway-preview .text-link{font:12px/1.6 Consolas,monospace;color:#00dfed}
+body[data-page=home] .system-layout{gap:24px;grid-template-columns:1.35fr 1fr;border:1px solid #087dff;border-radius:7px;padding:24px;background:#050e19}
+body[data-page=home] .signal-panel{border:1px solid #214666;border-radius:4px;box-shadow:none;background:repeating-linear-gradient(0deg,transparent 0,transparent 5px,#64a9ff09 5px,#64a9ff09 6px),#040b12}
+.sensing .panel-top{background:#132235;border-bottom:1px solid #24415d;color:#78b8eb;font-size:9px;padding:15px;letter-spacing:.8px}
+.sensing .panel-top .status-dot{background:#00e4ed;box-shadow:0 0 10px #00c5ed60}
+.sensing .web-map{max-height:290px;min-height:210px}
+.sensing .web-map ellipse{opacity:.25}
+.sensing .web-lines path{stroke:#0788ff;stroke-dasharray:4 5;opacity:.75}
+.sensing .web-nodes circle{fill:#00e7ed;filter:drop-shadow(0 0 4px #00b6f0)}
+.sensing .web-nodes circle:nth-child(3){fill:#0d8bff}
+.sensing .web-map text{fill:#00e7ed;font-size:10px}
+.sensing .pulse-ring{stroke:#00e7ed}
+.sensing .panel-bottom{padding:16px;border-top:1px solid #214666;background:#0c1622;gap:15px}
+.sensing .panel-bottom span{color:#a2ccd9;font-size:10px;line-height:1.6}
+.sensing .panel-bottom small{font:9px/1.6 Consolas,monospace;color:#789db3}
+.sensing .signal-button{background:#087bff;border:1px solid #087bff;color:#020c16;font:11px Consolas,monospace;padding:13px;border-radius:4px}
+.sensing .signal-button:hover{background:#4ca6ff}
+body[data-page=home] .system-notes{display:grid;gap:10px;align-content:stretch}
+body[data-page=home] .system-notes article,body[data-page=home] .system-notes article:first-child,body[data-page=home] .system-notes article:last-child{padding:20px 18px;border:1px solid #253847;border-radius:4px;background:#191f27;gap:14px}
+body[data-page=home] .system-notes article>span{color:#00e7ed;font-size:11px;padding-top:3px}
+.sensing .system-notes h3{font:600 15px/1.6 Consolas,monospace;letter-spacing:0;color:#00e1e9;margin:0 0 8px}
+.sensing .system-notes p{font:12px/1.8 Consolas,monospace;color:#9fcbd9}
+body[data-page=home] .phase-grid{border:0;gap:24px}
+body[data-page=home] .phase-grid>a,body[data-page=home] .phase-grid>a:last-child{display:flex;flex-direction:column;min-height:280px;padding:26px;border:1px solid #087dff;border-radius:7px;background:repeating-linear-gradient(0deg,transparent 0,transparent 5px,#69a9e808 5px,#69a9e808 6px),#040b13}
+body[data-page=home] .phase-grid>a:hover{background-color:#091c2d;box-shadow:0 0 25px #007bff18;transform:translateY(-3px)}
+body[data-page=home] .phase-number{display:block;align-self:flex-start;color:#80bcff;background:#213346;padding:5px 7px;font:10px Consolas,monospace;letter-spacing:.5px}
+body[data-page=home] .phase-grid>a:nth-child(2) .phase-number{color:#ebce2d;background:#41380b}
+body[data-page=home] .phase-grid>a:nth-child(3) .phase-number{color:#c393f2;background:#30243e}
+body[data-page=home] .phase-icon{font:16px/1.6 Consolas,monospace;color:#397cad;text-shadow:none;margin:25px 0 18px;white-space:pre}
+body[data-page=home] .phase-grid h3{font:400 18px/1.6 Consolas,monospace;letter-spacing:0;color:#078aff;margin-bottom:12px}
+body[data-page=home] .phase-grid p{font:12px/1.85 Consolas,monospace;color:#9fcbd9;max-width:none;margin-bottom:25px}
+.phase-grid>a:after{content:'Open pathway  →';display:block;border-top:1px solid #19334a;padding-top:16px;margin-top:auto;color:#00dce9;font:11px Consolas,monospace}
+body[data-page=home] .phase-arrow{color:#00e4ed;font-size:17px;right:23px;top:26px}
+@media(max-width:1350px){body[data-page=home] .sensing,body[data-page=home] .pathway-preview{margin-left:6%;margin-right:6%}}
+@media(max-width:900px){body[data-page=home] .system-layout{grid-template-columns:1fr;padding:20px}.sensing .web-map{max-height:320px}body[data-page=home] .system-notes{margin:0}.sensing .section-heading{display:block}body[data-page=home] .phase-grid{gap:15px}body[data-page=home] .phase-grid>a{padding:20px}.phase-arrow{display:none}}
+@media(max-width:680px){body[data-page=home] .sensing,body[data-page=home] .pathway-preview{padding-top:40px;padding-bottom:40px}body[data-page=home] .system-layout{padding:12px;gap:12px}.sensing .panel-top{font-size:7px;padding:12px;letter-spacing:.2px}.sensing .panel-bottom{flex-wrap:wrap;padding:12px}.sensing .panel-bottom span{font-size:9px}.sensing .panel-bottom small{font-size:8px}.sensing .signal-button{width:100%}body[data-page=home] .system-notes article{padding:17px 14px}.sensing .system-notes p{font-size:11px}body[data-page=home] .phase-grid{grid-template-columns:1fr;gap:18px}body[data-page=home] .phase-grid>a,body[data-page=home] .phase-grid>a:last-child{min-height:260px;padding:24px;border:1px solid #087dff}.phase-arrow{display:block}}

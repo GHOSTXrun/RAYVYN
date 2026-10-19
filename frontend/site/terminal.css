@@ -1,0 +1,13 @@
+.terminal-section{position:relative;isolation:isolate;overflow:hidden;padding:46px max(6%,24px) 30px;background:#07090c;border-bottom:1px solid #1a304b;color:#1489ff;font-family:Consolas,'Courier New',monospace}
+.terminal-section:after{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:repeating-linear-gradient(0deg,transparent 0,transparent 4px,#438cff0b 4px,#438cff0b 5px)}
+.terminal-meta{max-width:780px;margin:0 auto 15px;display:flex;justify-content:space-between;gap:16px;font-size:9px;letter-spacing:1.5px;color:#5282ad}
+.terminal-frame{max-width:780px;margin:auto;border:4px double #1688ff;padding:22px 30px 16px;background:#050a1080;box-shadow:0 0 28px #087bff0a,inset 0 0 36px #087bff06}
+.terminal-command{font-size:10px;letter-spacing:1px;color:#508ac1;margin-bottom:24px}
+.terminal-cursor{display:inline-block;color:#59a8ff;animation:terminal-blink 1.4s steps(1,end) infinite}
+.terminal-ascii{font-family:Consolas,'Courier New',monospace;font-size:13px;line-height:1.07;font-weight:400;letter-spacing:0;white-space:pre;width:max-content;max-width:100%;margin:0 auto;text-shadow:0 0 10px #0080ff50;color:#0787ff}
+.terminal-frame p{text-align:center;font-family:inherit;color:#168eff;font-size:14px;line-height:1.6;letter-spacing:.4px;margin:27px 0}
+.terminal-baseline{border-top:1px solid #123252;padding-top:12px;display:flex;justify-content:space-between;font-size:9px;letter-spacing:1px;color:#4778a5}
+.terminal-caption{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:19px;font-size:8px;letter-spacing:1.5px;color:#607f9a}.terminal-led{width:4px;height:4px;border-radius:50%;background:#168eff;box-shadow:0 0 8px #168eff}
+@keyframes terminal-blink{50%{opacity:0}}
+@media(max-width:680px){.terminal-section{padding:30px 6% 24px}.terminal-meta{font-size:7px;letter-spacing:.5px}.terminal-frame{padding:16px 10px 12px}.terminal-command{font-size:9px;margin-bottom:22px}.terminal-ascii{font-size:clamp(5px,1.53vw,10px);line-height:1.15}.terminal-frame p{font-size:10px;letter-spacing:0;margin:22px 0}.terminal-baseline{font-size:7px;letter-spacing:.4px}.terminal-caption{font-size:7px;letter-spacing:.7px}}
+@media(prefers-reduced-motion:reduce){.terminal-cursor{animation:none}}

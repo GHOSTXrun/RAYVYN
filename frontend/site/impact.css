@@ -1,0 +1,44 @@
+/* Home art direction: electric editorial / oversized specimen. */
+body[data-page=home]{background:#05070b}
+body[data-page=home] .header{height:80px;background:#05070b;padding:0 4%;border-color:#ffffff20}
+.deep-hero{height:calc(100svh - 80px);min-height:740px;max-height:1100px;background:radial-gradient(ellipse at 79% 53%,#104caf 0, #071c43 27%,transparent 57%),#05070b}
+.deep-hero:after{content:'';position:absolute;inset:0;pointer-events:none;z-index:-1;background:linear-gradient(0deg,#135eff35,transparent 28%),repeating-linear-gradient(90deg,transparent 0,transparent calc(25% - 1px),#8ebeff0a 25%)}
+.deep-topline{top:27px;left:4%;right:4%;color:#a0b4d1;letter-spacing:1.6px}
+.deep-topline i{background:#e5ff67;box-shadow:0 0 16px #d5ff60}
+.deep-hero h1{top:auto;bottom:54px;left:37%;right:auto;font-size:24vw;line-height:.8;letter-spacing:-.085em;white-space:nowrap;opacity:.28;color:transparent;background:none;-webkit-text-fill-color:transparent;-webkit-text-stroke:1px #82b9ff;z-index:-1}
+.deep-grid{background-size:100px 100px;opacity:.45;transform:perspective(500px) rotateX(55deg) scale(1.7);transform-origin:50% 100%;top:50%;mask-image:linear-gradient(transparent,#000)}
+.deep-aura{left:44%;right:-15%;top:10%;height:90%;background:radial-gradient(ellipse,#005eff80,transparent 67%);filter:blur(45px)}
+.deep-specimen{left:74%;top:46%;width:min(79vw,1130px);height:min(79vw,1130px);z-index:1;transform:translate(-50%,-50%) rotate(-13deg)}
+.deep-specimen img{filter:saturate(1.15) contrast(1.08);animation:ray-drift 10s ease-in-out infinite}
+.deep-orbits{left:75%;top:48%;width:68%;aspect-ratio:1.5;transform:translate(-50%,-50%) rotate(-32deg);z-index:0}
+.deep-orbits span{border-color:#62a8ff85;box-shadow:0 0 40px #147aff25}
+.deep-orbits span:nth-child(2){inset:-10%;border-style:solid;border-color:#88baff28}
+.deep-orbits span:nth-child(3){inset:12%;border-color:#b7d7ff35}
+.deep-bottom{left:6%;right:auto;top:21%;bottom:auto;display:block;width:49%;z-index:2;pointer-events:none}
+.deep-bottom .eyebrow{font-size:10px;color:#dbf575;letter-spacing:2px}
+.deep-bottom h2{font-size:clamp(58px,6.8vw,110px);line-height:.94;letter-spacing:-.065em;margin:25px 0 0;font-weight:800}
+body[data-page=home] .deep-bottom h2 em{display:block;color:#8bb9ff;font-weight:400;letter-spacing:-.065em}
+.deep-intro{margin-top:30px;max-width:360px;pointer-events:auto}
+.deep-intro p{font-size:13px;line-height:1.85;color:#b0bed1}
+.deep-intro .actions{margin-top:27px;gap:23px}
+body[data-page=home] .primary{background:#e3ff77;color:#091007;border:1px solid #e3ff77;padding:19px 24px;font-weight:700;box-shadow:0 0 30px #d5ff6012;transition:background .2s,box-shadow .2s,transform .2s}
+body[data-page=home] .primary:hover{background:#f0ffb4;box-shadow:0 0 35px #d5ff6040;transform:translateY(-3px)}
+.deep-docs{color:#c9d5e6;border-color:#6c7e97}
+.specimen-label{z-index:2;top:auto;bottom:118px;font-size:9px;color:#c0d9fa}
+.left-label{left:61%}.right-label{right:4%}.specimen-label b{color:#7f9fc4}.cross{color:#dfff77}
+.deep-footer{left:4%;right:4%;bottom:20px;color:#a1b4cd;border-color:#a0c7ff40;font-size:9px}
+body[data-page=home] .principles{background:#dfff77!important;color:#0a160b!important;padding:24px 6%!important;font-weight:700;letter-spacing:1.5px}
+body[data-page=home] .principles i{color:#193b13!important}
+body[data-page=home] .terminal-section{background:#05070b!important;padding-top:80px!important}
+body[data-page=home] .terminal-frame{border-color:#3764a0!important;background:radial-gradient(ellipse at 50% 110%,#103b75,#070b13 70%)!important}
+body[data-page=home] .organism{border-top:1px solid #ffffff20}
+body[data-page=home] .organism h2{font-size:clamp(45px,5vw,76px);font-weight:700;line-height:1.04}
+body[data-page=home] .archive-panel{background:linear-gradient(120deg,#112e67,#080d18 65%);border-color:#4971aa}
+body[data-page=home] .archive-doc{transition:transform .2s,border-color .2s}
+body[data-page=home] .archive-doc:hover{transform:translateY(-5px);border-color:#dfff77}
+body[data-page=home] .sensing .section-heading h2,body[data-page=home] .pathway-preview .section-heading h2{font:600 clamp(28px,3.5vw,46px)/1.1 Arial,sans-serif;letter-spacing:-1.5px;color:#f1f5ff}
+@media(min-width:1600px){.deep-bottom{top:24%}.deep-intro{margin-top:40px}}
+@media(max-width:1000px) and (min-width:681px){.deep-hero{min-height:790px}.deep-bottom{top:23%;width:58%}.deep-bottom h2{font-size:68px}.deep-specimen{left:83%;top:38%;width:90vw;height:90vw}.deep-intro{max-width:320px}.left-label{left:68%;bottom:155px}.right-label{display:none}}
+@media(max-width:680px){body[data-page=home] .header{height:72px}.deep-hero{height:auto;min-height:940px;max-height:none;background:radial-gradient(ellipse at 75% 35%,#104caf,transparent 49%),#05070b}.deep-topline{top:22px;font-size:7px}.deep-bottom{top:67px;left:6%;width:88%}.deep-bottom h2{font-size:clamp(49px,12.4vw,78px);line-height:.95;margin-top:15px;letter-spacing:-.06em}.deep-bottom .eyebrow{font-size:8px}.deep-intro{margin-top:360px;max-width:100%}.deep-intro p{font-size:12px}.deep-intro .actions{gap:22px;margin-top:22px}.deep-specimen{left:57%;top:47%;width:118vw;height:118vw;max-width:590px;max-height:590px}.deep-orbits{left:58%;top:46%;width:110%;aspect-ratio:1.6}.deep-hero h1{left:0;bottom:285px;font-size:27vw;opacity:.32}.specimen-label{bottom:310px;left:6%;font-size:7px}.right-label{display:none}.deep-footer{font-size:7px}.deep-aura{left:0;right:-35%;top:18%;height:65%}body[data-page=home] .principles{font-size:9px;letter-spacing:.3px}body[data-page=home] .terminal-section{padding-top:45px!important}}
+@media(prefers-reduced-motion:reduce){.deep-specimen img{animation:none}body[data-page=home] .primary,body[data-page=home] .archive-doc{transition:none}}
+@media(max-width:680px){body[data-page=home] .header{gap:12px;padding:0 5%}body[data-page=home] .brand{font-size:17px;letter-spacing:1px;gap:4px}body[data-page=home] .brand img{width:30px;height:30px}body[data-page=home] .header nav{gap:12px;font-size:10px;flex-shrink:0}.deep-specimen{top:43%;left:55%;width:105vw;height:105vw;max-width:480px;max-height:480px}.deep-intro{margin-top:360px;position:relative;background:linear-gradient(90deg,#050b17e8,#050b1700);padding-top:12px}.specimen-label{display:none}.deep-hero h1{bottom:330px;opacity:.18}}
