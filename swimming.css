@@ -1,0 +1,11 @@
+/* Decorative rays share the logo asset; screen blending removes its black backdrop. */
+.swimming-ocean{position:fixed;inset:0;z-index:4;pointer-events:none;overflow:hidden;mix-blend-mode:screen;contain:strict}
+.ocean-ray{position:absolute;left:0;top:var(--depth);width:var(--size);opacity:var(--alpha);mix-blend-mode:screen;animation:ocean-cross var(--duration) linear infinite;animation-delay:var(--delay);will-change:transform}
+.ocean-ray img{display:block;width:100%;height:auto;animation:ocean-fin 8s ease-in-out infinite;animation-delay:var(--delay);filter:saturate(1.15) brightness(1.15);transform-origin:50% 55%}
+.ocean-ray:nth-child(even){animation-direction:reverse}
+.ocean-ray:nth-child(even) img{scale:-1 1}
+@keyframes ocean-cross{0%{transform:translate3d(calc(-1 * var(--size)),35px,0) rotate(-9deg)}25%{transform:translate3d(25vw,-35px,0) rotate(4deg)}50%{transform:translate3d(55vw,25px,0) rotate(-3deg)}75%{transform:translate3d(85vw,-25px,0) rotate(6deg)}100%{transform:translate3d(calc(100vw + var(--size)),35px,0) rotate(-9deg)}}
+@keyframes ocean-fin{0%,100%{transform:scaleY(.95) rotate(-3deg)}50%{transform:scaleY(1.04) rotate(3deg)}}
+body.motion-paused .ocean-ray,body.motion-paused .ocean-ray img,body.ocean-hidden .ocean-ray,body.ocean-hidden .ocean-ray img{animation-play-state:paused!important}
+@media(max-width:680px){.ocean-ray{width:calc(var(--size) * .55)}.ocean-ray:nth-child(n+8){display:none}}
+@media(prefers-reduced-motion:reduce){.swimming-ocean{display:none}}
